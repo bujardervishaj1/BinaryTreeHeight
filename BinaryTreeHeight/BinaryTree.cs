@@ -4,14 +4,14 @@
     {
         public Node root;
 
-        public int MaxDepth(Node node)
+        public int MaxDepth()
         {
-            if (node == null)
+            if (root == null)
                 return 0;
             else
             {
-                int lDepth = MaxDepth(node.left);
-                int rDepth = MaxDepth(node.right);
+                int lDepth = root.left.MaxDepth();
+                int rDepth = root.right.MaxDepth();
 
                 return lDepth > rDepth ? lDepth + 1 : rDepth + 1;
             }

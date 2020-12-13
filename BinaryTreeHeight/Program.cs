@@ -15,7 +15,9 @@ namespace BinaryTreeHeight
             tree.root.left.left = new Node(2);
             tree.root.left.right = new Node(5);
 
-            Console.WriteLine("Lartesia e pemes eshte: " + tree.MaxDepth(tree.root));
+
+            Console.WriteLine("Lartesia e pemes eshte: " + tree.MaxDepth());
+            Console.WriteLine("Thellesi nga nyeja root eshte: " + tree.root.MaxDepth());
         }
     }
 }
